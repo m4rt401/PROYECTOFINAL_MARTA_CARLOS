@@ -13,8 +13,8 @@
 WiFiServer server(80);
 
 // Insert your network credentials
-const char* ssid     = "FRITZBox 7530 AA";
-const char* password = "29204458007338454923";
+const char* ssid     = "****";
+const char* password = "************";
 
 //---------------------VARIABLES GLOBALES-------------------------
 int contconexion = 0;
@@ -332,7 +332,7 @@ void displayPressure(){
   display.setTextSize(1);
   display.print("Humidity: ");
   display.print(bme.readHumidity());
-  display.print(" hpa");
+  display.print(" %");
   displayIndicator(displayScreenNum);
   display.display();
   colorWipe(strip.Color(255,   0,   255), 50, 12);
